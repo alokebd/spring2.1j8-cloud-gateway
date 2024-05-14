@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "c1bd8d88-6f96-4ad4-8b2b-cea0ee54ef0f",
+		"name": "Spring-Cloud-Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33936986"
+	},
+	"item": [
+		{
+			"name": "1st-Service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-first-Header",
+						"value": "first-service-header"
+					}
+				],
+				"url": "http://localhost:8086/test"
+			},
+			"response": []
+		},
+		{
+			"name": "cloud-gateway-1st-Service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-first-Header",
+						"value": "first-service-header"
+					}
+				],
+				"url": "http://localhost:8088/api/v1/first/"
+			},
+			"response": []
+		},
+		{
+			"name": "2nd-Service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-second-Header",
+						"value": "second"
+					}
+				],
+				"url": "http://localhost:8087/second"
+			},
+			"response": []
+		},
+		{
+			"name": "clound-gateway-2nd-Service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-second-Header",
+						"value": "second"
+					}
+				],
+				"url": "http://localhost:8088/api/v1/second/"
+			},
+			"response": []
+		}
+	]
+}
